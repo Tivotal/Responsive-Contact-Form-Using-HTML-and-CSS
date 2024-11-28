@@ -1,0 +1,189 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 30px;
+}
+
+.form {
+  width: 100%;
+  max-width: 650px;
+}
+
+.form h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.box {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.col .box input,
+.box textarea {
+  width: 100%;
+  height: 50px;
+  margin-top: 8px;
+  outline: none;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 0 15px;
+  transition: 0.3s;
+}
+
+.col .box input::placeholder,
+.box textarea::placeholder {
+  color: #797979;
+}
+
+.col .box input:focus,
+.box textarea:focus {
+  border-color: #4070f4;
+}
+
+.box textarea {
+  resize: none;
+  padding: 15px;
+  min-height: 200px;
+}
+
+.box label {
+  color: #4070f4;
+}
+
+.btn {
+  margin-top: 15px;
+  padding: 15px 50px;
+  background: #4070f4;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3461db;
+}
+
+.row {
+  width: 100%;
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info {
+  width: 100%;
+  padding: 25px;
+  background: #222;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.contact-info h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.info i {
+  width: 30px;
+  height: 30px;
+  background: #4070f4;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+.socials i {
+  display: inline-block;
+  margin-top: 40px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #fff;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 45px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  background: #fff;
+  color: #222;
+}
+
+.map iframe {
+  width: 100%;
+  height: 255px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1050px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .wrapper .form,
+  .wrapper .row {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .form .col {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .form .col .box {
+    margin-top: 15px;
+  }
+}
